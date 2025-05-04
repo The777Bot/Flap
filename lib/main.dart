@@ -1,20 +1,23 @@
 import 'package:flutter/material.dart';
+import 'screens/home_screen.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(const FlapApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class FlapApp extends StatelessWidget {
+  const FlapApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
+    return MaterialApp(
+      title: 'Flap',
+      theme: ThemeData(
+        brightness: Brightness.dark,
+        primarySwatch: Colors.purple,
       ),
+      home: const HomeScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
