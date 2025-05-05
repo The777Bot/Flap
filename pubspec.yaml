@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   model_viewer_plus: ^1.7.0
+  audioplayers: ^5.2.0
 
 dev_dependencies:
   flutter_test:
@@ -21,3 +22,5 @@ flutter:
   assets:
     - assets/images/avatar_placeholder.png
     - assets/models/Ari_Baddie_3.glb
+    - assets/images/intro_bg.jpg
+    - assets/audio/intro_music.mp3
